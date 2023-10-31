@@ -5,21 +5,19 @@ const Schedule = (props) => {
     return ( 
         <div>
             <h5>Mi horario: {props.total} materias</h5>
-
-            
             {
                 props.horario.length === 0
                     ?
-                    <h3>No hay horario asignado</h3>
+                    <h3 className="Table-empty">No hay horario asignado</h3>
                     :
-                    <Table striped bordered hover>
+                    <Table className="Table" striped bordered hover>
                         <thead>
                             <tr>
                                 <th>Clave</th>
                                 <th>Materia</th>
                                 <th>Hora</th>
                                 <th>Grupo</th>
-                                <th></th>
+                                <th>🔘</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -38,9 +36,6 @@ const Schedule = (props) => {
                         </tbody>
                     </Table>
             }
-
-
-
         </div>
     ); 
 }

@@ -48,10 +48,13 @@ class App extends Component {
     return existe
   }
   render() { 
+    const bannerTop = "Por una Juventud Integrada al Desarrollo de México";
+    const bannerBottom = "Copyright © Todos los derechos reservados";
+
     return (
       <div className="App">
         <Header/>
-        <Banner/>
+        <Banner title={<h4><i>{bannerTop}</i></h4>}/>
         <div className="App-body">
           <Courses
             materias={this.state.materias}
@@ -64,7 +67,7 @@ class App extends Component {
             eliminar={this.eliminar}
           />
         </div>
-        <Banner/>
+        <Banner title={<footer>{bannerBottom}</footer>}/>
       </div>
     );
   }

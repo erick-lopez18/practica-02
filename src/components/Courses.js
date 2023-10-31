@@ -5,15 +5,14 @@ const Courses = (props) => {
     return ( 
         <div>
             <h5>Materias</h5>
-
-            <Table striped bordered hover>
+            <Table className="Table" striped bordered hover>
                 <thead>
                     <tr>
                         <th>Clave</th>
                         <th>Materia</th>
                         <th>Hora</th>
                         <th>Grupo</th>
-                        <th></th>
+                        <th>🔘</th>
                     </tr>
                 </thead>
                 <tbody>

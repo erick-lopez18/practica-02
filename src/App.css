@@ -1,10 +1,12 @@
 .App {
+  display: grid;
+  min-height: 100vh;
   text-align: center;
 }
 
 .App-logo {
-  height: 20vmin;
-  padding: 3vh;
+  height: 16vmin;
+  padding: 2vh;
   pointer-events: none;
 }
 
@@ -15,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   min-height: 10vh;
   display: flex;
   flex-direction: row;
@@ -26,22 +28,37 @@
 }
 
 .App-banner {
-  background-color: #2a65be;
-  font-size: calc(1px + 1.5vmin);
+  background-color: #002f6c;
+  min-height: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(4px + 1.5vmin);
   color: white;
 }
 
 .App-body {
-  background-color: #ffffff;
-  min-height: 65vh;
+  background-color: #dbdbdb;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
-  flex-grow: 1;
+  flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-evenly;
   font-size: calc(4px + 1.5vmin);
-  color: rgb(0, 0, 0);
+  color: black;
+  padding: 2vh;
+}
+
+.Table td{
+  vertical-align: middle;
+}
+
+.Table-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
 }
 
 .App-link {

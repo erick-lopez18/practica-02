@@ -1,11 +1,15 @@
+import PropTypes from "prop-types";
 
-
-function Banner() {
+function Banner(props) {
     return ( 
         <div className="App-banner">
-            <h3>Por una Juventud Integrada al Desarrollo de México</h3>
+            {props.title}
         </div>
     );
 }
 
 export default Banner;
+
+Banner.propTypes = {
+    title: PropTypes.object,
+};
