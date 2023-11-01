@@ -1,15 +1,17 @@
 import PropTypes from "prop-types";
 
+
 function Banner(props) {
-    return ( 
+    console.log(props.title)
+    return (
         <div className="App-banner">
             {props.title}
         </div>
     );
 }
 
-export default Banner;
-
 Banner.propTypes = {
     title: PropTypes.object,
 };
+
+export default Banner;

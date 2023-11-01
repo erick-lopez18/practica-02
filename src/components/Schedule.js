@@ -2,7 +2,7 @@ import { Button, Table } from "react-bootstrap";
 
 
 const Schedule = (props) => {
-    return ( 
+    return (
         <div>
             <h5>Mi horario: {props.total} materias</h5>
             {
@@ -28,16 +28,20 @@ const Schedule = (props) => {
                                         <td>{mat.materia}</td>
                                         <td>{mat.hora}</td>
                                         <td>{mat.grupo}</td>
-                                        <td><Button onClick={() => props.eliminar(mat, clave)} variant="danger">-</Button></td>
+                                        <td><Button
+                                            onClick={() => props.eliminar(mat, clave)}
+                                            variant="danger">
+                                            -
+                                        </Button>
+                                        </td>
                                     </tr>
-
                                 )
                             }
                         </tbody>
                     </Table>
             }
         </div>
-    ); 
+    );
 }
- 
+
 export default Schedule;

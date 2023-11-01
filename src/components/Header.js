@@ -5,7 +5,7 @@ import logo_itt from "../images/logo_itt.png";
 
 
 class Header extends Component {
-    render() { 
+    render() {
         return (
             <header className="App-header">
                 <img src={logo_educacion} className="App-logo" alt="logo" />
@@ -15,5 +15,5 @@ class Header extends Component {
         );
     }
 }
- 
+
 export default Header;
